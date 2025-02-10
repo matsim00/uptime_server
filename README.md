@@ -6,7 +6,7 @@ In caso di mancata risposta da parte di una macchina, viene generato un file di 
 
 ## Requisiti
 
-- **il Server** dove viene schedulato lo script deve poter raggiungere tutti gli altri server
+- **Il Server** dove viene schedulato lo script deve poter raggiungere tutti gli altri server
 - **Server di posta**: per la configurazione dell'invio delle email, è necessario avere un server di posta configurato correttamente.
 
 ## Note aggiuntive
