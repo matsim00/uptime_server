@@ -1,6 +1,13 @@
-# uptime_server
+# Script di Monitoraggio
 
-Questo è uno script di monitoraggio per assicurarci che i nostri server siano sempre operativi, lo script può essere schedulato da una sola macchina purchè raggiunga tutti gli altri server.
-Lo scopo è quello di fare un solo ping su ogni macchina ogni minuto, quindi schedulato da crontab, se una macchina non risponde genera un file che ci viene inviato tramite mail e ci informa della macchina che non è operativa
+Questo script è progettato per monitorare lo stato di operatività dei nostri server. Può essere eseguito su una sola macchina, purché questa abbia accesso a tutti gli altri server da monitorare. Lo script esegue un ping su ogni macchina ogni minuto (quando schedulato tramite `crontab`).
 
-ps. per la configurazione della mail è necessario avere un server mail
+In caso di mancata risposta da parte di una macchina, viene generato un file di log e inviato via email, informandoci del server che non è operativo.
+
+## Requisiti
+
+- **Server di posta**: per la configurazione dell'invio delle email, è necessario avere un server di posta configurato correttamente.
+
+## Note aggiuntive
+
+- Lo script è pensato per essere eseguito periodicamente tramite `crontab` su una macchina centrale.
